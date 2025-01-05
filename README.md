@@ -67,23 +67,49 @@ PORT=5000
 4. Start the development servers:
 
 ## 📁 Project Structure
-modern-ecommerce/
-├── frontend/
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── context/ # React Context providers
-│ │ ├── pages/ # Page components
-│ │ ├── styles/ # CSS styles
-│ │ └── types/ # TypeScript types
-│ └── public/ # Static assets
-│
-├── backend/
-│ ├── config/ # Database configuration
-│ ├── controllers/ # Route controllers
-│ ├── middleware/ # Custom middleware
-│ ├── models/ # Mongoose models
-│ ├── routes/ # API routes
-│ └── scripts/ # Utility scripts
+
+
+### Directory Explanations
+
+#### Frontend Structure
+- `public/` - Static assets and entry HTML
+- `src/` - Source code
+  - `components/` - Reusable UI components
+  - `context/` - React Context providers for state management
+  - `pages/` - Page components
+    - `admin/` - Admin dashboard pages
+    - `static/` - Static content pages
+  - `styles/` - CSS and styling files
+  - `types/` - TypeScript type definitions
+  - `App.tsx` - Root component
+  - `main.tsx` - Application entry point
+
+#### Backend Structure
+- `config/` - Configuration files (database, etc.)
+- `controllers/` - Route controllers
+- `middleware/` - Custom middleware functions
+- `models/` - Database models
+- `routes/` - API route definitions
+- `scripts/` - Utility scripts
+- `server.js` - Server entry point
+
+### Key Files
+- `.env` - Environment variables
+- `.gitignore` - Git ignore rules
+- `package.json` - Project dependencies and scripts
+- `README.md` - Project documentation
+
+### Configuration Files
+#### Frontend
+- `eslint.config.js` - ESLint configuration
+- `postcss.config.js` - PostCSS configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `vite.config.ts` - Vite configuration
+
+#### Backend
+- `db.js` - Database configuration
+- `server.js` - Express server configuration
 
 ## 🔌 API Endpoints
 
